@@ -31,8 +31,7 @@ e.g: (7, 9) (1, 3), (5, 3)
 
         for (int i = 0; i < integersArray.length; i++) {
             for (int j = 0; j < integersArray.length; j++) {
-                int differenceBetweenNumbers = integersArray[i] - integersArray[j];
-                if (differenceBetweenNumbers == 2 || differenceBetweenNumbers == -2) {
+                if (integersArray[i] - integersArray[j] == difference || integersArray[j] - integersArray[i] == difference ) {
                     pairs += " (" + integersArray[i] + "," + integersArray[j] + ") ";
                 }
             }
